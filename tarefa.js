@@ -6,3 +6,8 @@
 function inverterFrase(string) {
     return string.split("").reverse().join("");
 }
+
+// function removerCaracteresDuplicados(string){
+//     let caracteres = string.split("")
+//     let caracteresUnicos =
+// }
