@@ -35,7 +35,7 @@
  * uma delas.))
  */
 
-let textEx3 = "babad";
+// let textEx3 = "babad";
 
 /**
  * Coloque em maiuscula a primeira letra de cada frase na string
@@ -43,17 +43,33 @@ let textEx3 = "babad";
  * b. Output: "Hello.How are you?"I'm fine,thank you.""
  */
 
-function capitalizarPrimeiraLetra() {
-    let textEx4 = "hello. how are you? i'm fine,thank you.".split(".");
+// function capitalizarPrimeiraLetra() {
+//     let textEx4 = "hello. how are you? i'm fine,thank you.".split(".");
 
-    let fraseCapitalizada = textEx4.map((frase) => {
-        frase = frase.trim();
+//     let fraseCapitalizada = textEx4.map((frase) => {
+//         frase = frase.trim();
 
-        if (frase.length == 0) {
-            return frase;
-        }
-        return frase.charAt(0).toLocaleUpperCase() + frase.slice(1);
-    });
-    return fraseCapitalizada.join(".");
+//         if (frase.length == 0) {
+//             return frase;
+//         }
+//         return frase.charAt(0).toLocaleUpperCase() + frase.slice(1);
+//     });
+//     return fraseCapitalizada.join(".");
+// }
+// console.log(capitalizarPrimeiraLetra());
+
+/**
+ * Verifique se a string é um anagrama de um palindromo
+ * a. Input: "racecar"
+ * b. Output: "true"
+ *(Atenção : Um anagrama de "racencar" pode formar um palindromo "racencar")
+Observação : Para todos os itens você pode presumir que a string conterá apenas caracteres alfabéticos,
+espaços ou sinais de pontuiação .A saída para cada tarefa deve ser retomada como uma string
+ */
+
+let textEx5 = "racecar";
+let novoTexto = textEx5.split("").reverse().join("");
+
+if (textEx5 === novoTexto) {
+    console.log(true);
 }
-console.log(capitalizarPrimeiraLetra());
