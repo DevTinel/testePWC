@@ -31,6 +31,32 @@ function capitalizarPrimeiraLetra(string) {
     });
     return fraseCapitalizada.join(".");
 }
-console.log(
-    capitalizarPrimeiraLetra("hello. how are you? i'm fine,thank you.")
-);
+
+function testes() {
+    //teste inverter frase
+    let frase = "Hello, World!";
+
+    let fraseInvertida = inverterFrase(frase);
+    console.log("Inverter frase");
+    console.log(`Entrada ${frase}`);
+    console.log(`saida ${fraseInvertida}`);
+    console.log("-------------------");
+
+    // teste remover caracteres duplicados
+    let fraseSemCaracterDuplicado = removerCaracteresDuplicados(frase);
+    console.log("remover Caracteres Duplicados");
+    console.log(`Entrada ${frase}`);
+    console.log(`saida ${fraseSemCaracterDuplicado}`);
+    console.log("-------------------");
+
+    // Capitalizar a primeira letra de cada frase
+
+    let fraseNormal = "hello. how are you? i'm fine,thank you.";
+    let fraseCapitalizada = capitalizarPrimeiraLetra(fraseNormal);
+    console.log("Capitalizar a primeira letra de cada Frase");
+    console.log(`Entrada ${fraseNormal}`);
+    console.log(`saida ${fraseCapitalizada}`);
+    console.log("-------------------");
+}
+
+console.log(testes());
