@@ -7,7 +7,13 @@ function inverterFrase(string) {
     return string.split("").reverse().join("");
 }
 
-// function removerCaracteresDuplicados(string){
-//     let caracteres = string.split("")
-//     let caracteresUnicos =
-// }
+function removerCaracteresDuplicados(string) {
+    let caracteres = "";
+
+    for (let i = 0; i < string.length; i++) {
+        if (caracteres.indexOf(string[i]) === -1) {
+            caracteres += string[i];
+        }
+    }
+    return caracteres;
+}
